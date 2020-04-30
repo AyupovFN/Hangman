@@ -35,7 +35,6 @@ class ConsoleInterface
           letter
         end
       end
-
     result.join(' ')
   end
 
