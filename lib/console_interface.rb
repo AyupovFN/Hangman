@@ -1,6 +1,4 @@
-
 class ConsoleInterface
-
   FIGURES =
       Dir[__dir__+'/../data/figures/*.txt'].
       sort.map { |file_name| File.read(file_name) }
@@ -17,7 +15,6 @@ class ConsoleInterface
       #{figure.colorize(:yellow)}
       #{"Ошибки (#{@game.errors_made}): #{errors_to_show}".colorize(:red)}
       #{"У вас осталось ошибок:".colorize(:green)} #{@game.errors_allowed.to_s.black.on_yellow.blink}
-
     END
 
     if @game.won?
@@ -53,5 +50,4 @@ class ConsoleInterface
     letter = gets[0].capitalize
     return letter
   end
-
 end

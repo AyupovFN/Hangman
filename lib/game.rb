@@ -1,6 +1,6 @@
-
 class Game
   MAX_ERRORS = 7
+
   def initialize(word)
     @letters = word.chars
     @normalized_letters = normalized_letters(word.chars)
